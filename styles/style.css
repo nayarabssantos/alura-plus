@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root{
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #c0c0c0;
+    --cor-tercaria: #167bf7;
+    --cor-fundo: #00030c;
+
+    --fonte-primaria: 'Inter', sans-serif;
+}
+
+*{ /* pega todo os elementos do html */ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria); 
+}
+
+.titulo_combo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.75rem;
+}
+
+.principal{
+    background-image: url(/assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    height: 100vh;
+}
