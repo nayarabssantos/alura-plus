@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root{
     --cor-primaria: #ffffff;
@@ -18,11 +18,14 @@
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-primaria); 
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 16px;
 }
 
-.titulo_combo{
-    font-family: var(--fonte-primaria);
-    font-size: 1.75rem;
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .principal{
@@ -33,4 +36,32 @@ body{
 
 .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.container__link_combo{
+    display: flex;
+    background-color: var(--cor-tercaria);
+    border-radius: 5px;
+    padding: 1em; /*espaço entre o elemento e a borda*/
+    color: var(--cor-primaria);
+    display: block;
+    text-decoration: none;
+}
+
+.container__link_single{
+    display: block;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--cor-primaria);
+    padding: 1em; /*espaço entre o elemento e a borda*/
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
 }
