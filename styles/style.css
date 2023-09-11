@@ -64,6 +64,10 @@ body{
 
 }
 
+.container__link:hover{
+    background-color: var(--cor-secundaria);
+}
+
 .link_secundário{
     background-color: transparent;
     border: 0.125rem solid var(--cor-primaria);
@@ -85,11 +89,75 @@ body{
 }
 
 .secundario__imagem{
-    width: 38rem;
+    width: 80%;
 }
 
 .container__descricao{
     width: 36.75rem;
     font-weight: 700;
+    gap: 15%;
 }
 
+.container__aviso{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.botao_sessao_tres{
+    width: 10.125rem;
+    margin-top:5%;
+    font-weight: 400;
+}
+
+.dispositivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30%;
+}
+
+.dispositivos__titulo{
+    font-size: 3rem;
+}
+
+.dispositivos__lista{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    font-size: 2rem;
+    margin: 5em 0;
+}
+
+.rodape{
+    margin: 5em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.rodape__link a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 1rem;
+}
+
+.rodape__link a:hover{
+    color: var(--cor-tercaria);
+}
+
+.rodape__texto{
+    margin: 1em 0;
+    font-size: 0.875rem;
+    color: var(--cor-secundaria);
+}
